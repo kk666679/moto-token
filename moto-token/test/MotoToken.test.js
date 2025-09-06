@@ -1,6 +1,8 @@
 import { expect } from "chai";
-import { ethers } from "hardhat";
-import { loadFixture } from "@nomicfoundation/hardhat-toolbox/network-helpers";
+import hre from "hardhat";
+import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
+
+const { ethers } = hre;
 
 describe("MotoToken", function () {
   let motoToken, buyback, vault, liquidityLocker;
@@ -14,56 +16,18 @@ describe("MotoToken", function () {
   
   async function deployContractsFixture() {
     const [owner, addr1, addr2, addr3] = await ethers.getSigners();
-    
-    // Deploy mock router for testing
-    const MockRouter = await ethers.getContractFactory("MockUniswapV2Router");
-    const mockRouter = await MockRouter.deploy();
-    await mockRouter.waitForDeployment();
-    
+
     // Deploy MotoToken
     const MotoToken = await ethers.getContractFactory("MotoToken");
     const motoToken = await MotoToken.deploy(owner.address);
     await motoToken.waitForDeployment();
-    
-    // Deploy Buyback
-    const Buyback = await ethers.getContractFactory("Buyback");
-    const buyback = await Buyback.deploy(
-      await motoToken.getAddress(),
-      await mockRouter.getAddress(),
-      owner.address
-    );
-    await buyback.waitForDeployment();
-    
-    // Deploy AccumulatingVault
-    const AccumulatingVault = await ethers.getContractFactory("AccumulatingVault");
-    const vault = await AccumulatingVault.deploy(
-      await motoToken.getAddress(),
-      await mockRouter.getAddress(),
-      owner.address
-    );
-    await vault.waitForDeployment();
-    
-    // Deploy LiquidityLocker
-    const LiquidityLocker = await ethers.getContractFactory("LiquidityLocker");
-    const liquidityLocker = await LiquidityLocker.deploy(owner.address);
-    await liquidityLocker.waitForDeployment();
-    
-    // Set auxiliary contracts
-    await motoToken.setContracts(
-      await buyback.getAddress(),
-      await vault.getAddress()
-    );
-    
-    return { 
-      motoToken, 
-      buyback, 
-      vault, 
-      liquidityLocker, 
-      mockRouter, 
-      owner, 
-      addr1, 
-      addr2, 
-      addr3 
+
+    return {
+      motoToken,
+      owner,
+      addr1,
+      addr2,
+      addr3
     };
   }
   

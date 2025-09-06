@@ -15,7 +15,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
  * - Buyback and burn mechanism
  * - Integration with BaseSwap DEX
  */
-contract MotoToken is ERC20, Ownable, ReentrancyGuard {
+contract MotoToken is Ownable, ERC20 {
     // BaseSwap Router address on Base network
     address public constant BASE_SWAP_ROUTER = 0x327Df1E6de05895d2ab08513aaDD9313Fe505d86;
     
@@ -46,15 +46,15 @@ contract MotoToken is ERC20, Ownable, ReentrancyGuard {
      */
     constructor(address initialOwner) ERC20("Moto", "MOTO") Ownable(initialOwner) {
         require(initialOwner != address(0), "MotoToken: invalid owner address");
-        
+
         // Mint total supply to the initial owner
-        _mint(initialOwner, TOTAL_SUPPLY);
-        
+        _mint(msg.sender, 1000 * 10 ** decimals());
+
         // Set fee exemptions for owner and contract
         feeExempt[initialOwner] = true;
         feeExempt[address(this)] = true;
     }
-    
+
     /**
      * @dev Sets the addresses of auxiliary contracts
      * @param _buyback Address of the Buyback contract
@@ -106,7 +106,7 @@ contract MotoToken is ERC20, Ownable, ReentrancyGuard {
      * @param to Recipient address
      * @param amount Amount to transfer
      */
-    function _transfer(address from, address to, uint256 amount) internal override {
+    function _update(address from, address to, uint256 amount) internal override {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         require(amount > 0, "MotoToken: transfer amount must be greater than zero");
@@ -121,13 +121,13 @@ contract MotoToken is ERC20, Ownable, ReentrancyGuard {
             uint256 netAmount = amount - feeAmount;
             
             // Transfer fee to contract
-            super._transfer(from, address(this), feeAmount);
-            
+            super._update(from, address(this), feeAmount);
+
             // Distribute fees to auxiliary contracts
             _distributeFees(feeAmount);
-            
+
             // Transfer net amount to recipient
-            super._transfer(from, to, netAmount);
+            super._update(from, to, netAmount);
         } else {
             // No fee, transfer full amount
             super._transfer(from, to, amount);
@@ -147,12 +147,12 @@ contract MotoToken is ERC20, Ownable, ReentrancyGuard {
         
         // Transfer to buyback contract
         if (buybackAmount > 0 && buybackContract != address(0)) {
-            super._transfer(address(this), buybackContract, buybackAmount);
+            super._update(address(this), buybackContract, buybackAmount);
         }
-        
+
         // Transfer to vault contract
         if (liquidityAmount > 0 && vaultContract != address(0)) {
-            super._transfer(address(this), vaultContract, liquidityAmount);
+            super._update(address(this), vaultContract, liquidityAmount);
         }
         
         emit FeesDistributed(buybackAmount, liquidityAmount);

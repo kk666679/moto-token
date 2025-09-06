@@ -1,0 +1,2 @@
+# moto-token
+Moto Token

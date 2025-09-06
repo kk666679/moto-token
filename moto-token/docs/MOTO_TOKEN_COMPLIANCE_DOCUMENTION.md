@@ -447,8 +447,8 @@ The Moto Token's alignment with Coinbase's Base ecosystem and its innovative app
 ---
 
 **Document Version:** 1.0  
-**Last Updated:** July 25, 2025  
-**Author:** Manus AI  
+**Last Updated:** September 9, 2025  
+**Author:** Kurnia Kadir
 **Review Status:** Complete  
 
 *This document represents a comprehensive analysis of the Moto Token project based on the current design and implementation. All information is subject to change based on ongoing development, regulatory developments, and community feedback.*

@@ -1,11 +1,12 @@
-import { HardhatUserConfig } from "hardhat/config";
+import "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-etherscan";
 import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const config: HardhatUserConfig = {
+// Hardhat v2.x automatically picks up configuration from the exported object
+export default {
   solidity: {
     version: "0.8.20",
     settings: {
@@ -56,5 +57,3 @@ const config: HardhatUserConfig = {
     currency: "USD",
   }
 };
-
-export default config;

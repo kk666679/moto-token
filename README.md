@@ -1,7 +1,9 @@
 # 🏍️ Moto Token ($MOTO)
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
-
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 ![Solidity](https://img.shields.io/badge/Solidity-0.8.20-blue.svg?logo=ethereum)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)

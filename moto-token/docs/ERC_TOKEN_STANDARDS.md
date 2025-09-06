@@ -1,6 +1,9 @@
 # ERC-20 Token Standard
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 ERC-20 is a technical standard used for issuing and implementing fungible tokens on the Ethereum blockchain. It defines a common set of rules and functions that all ERC-20 tokens must adhere to, ensuring interoperability between different token contracts and applications.
 

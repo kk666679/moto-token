@@ -1,11 +1,9 @@
-import "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-etherscan";
 import * as dotenv from "dotenv";
 
 dotenv.config();
 
-// Hardhat v2.x automatically picks up configuration from the exported object
 export default {
   solidity: {
     version: "0.8.20",
@@ -20,19 +18,14 @@ export default {
     "base-sepolia": {
       url: "https://sepolia.base.org",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
-      gasPrice: 1000000000,
     },
     "base-mainnet": {
       url: "https://mainnet.base.org",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
-      gasPrice: 1000000000,
     }
   },
   etherscan: {
-    apiKey: {
-      "base-sepolia": process.env.BASESCAN_API_KEY || "",
-      "base-mainnet": process.env.BASESCAN_API_KEY || ""
-    },
+    apiKey: process.env.BASESCAN_API_KEY || "",
     customChains: [
       {
         network: "base-sepolia",

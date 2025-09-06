@@ -1,6 +1,10 @@
 # Moto Token Compliance Documentation and Deployment Guide
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
+
 **Author:** Kurnia Kadir 
 **Date:** September 7, 2025  
 **Version:** 1.0  

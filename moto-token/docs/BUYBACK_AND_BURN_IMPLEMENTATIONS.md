@@ -1,6 +1,9 @@
 # Buyback and Burn Implementations
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 Buyback and burn is a deflationary mechanism used in cryptocurrency projects to reduce the circulating supply of a token, thereby potentially increasing its value due to scarcity. It is analogous to stock buybacks in traditional finance.
 

@@ -1,6 +1,9 @@
 # BaseSwap DEX Integration Notes
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 BaseSwap is a decentralized exchange (DEX) built on Coinbase's Base Layer 2 network, functioning as an Automated Market Maker (AMM) similar to Uniswap V2.
 

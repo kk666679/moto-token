@@ -1,6 +1,9 @@
 # Coinbase Asset Listing Requirements
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 Coinbase has a rigorous review process for listing new assets on its platform. While the specific details are not fully public, the following are the key areas of focus:
 

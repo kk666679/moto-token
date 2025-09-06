@@ -1,6 +1,9 @@
 # DeFi Tokenomics Best Practices
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 Tokenomics, the economic model of a cryptocurrency, is crucial for the long-term sustainability and success of any DeFi project. Well-designed tokenomics incentivize desired behaviors, create value, and ensure the health of the ecosystem. Here are some best practices:
 

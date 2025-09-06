@@ -1,6 +1,9 @@
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
-
 # Reflection Reward Mechanisms
+
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 Reflection tokens are a type of cryptocurrency that rewards holders with a portion of transaction fees or other protocol revenue, simply for holding the token in their wallet. This mechanism aims to incentivize holding, reduce selling pressure, and provide passive income to token holders.
 

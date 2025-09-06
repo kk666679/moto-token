@@ -1,6 +1,9 @@
 # Moto Token Architecture Design
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 This document outlines the design of the Moto Token (`$MOTO`) and its auxiliary smart contracts, focusing on tokenomics, security, and compliance with Coinbase's asset listing requirements. The architecture is built on Coinbase's Base Layer 2 blockchain, leveraging its low-cost and high-throughput environment.
 

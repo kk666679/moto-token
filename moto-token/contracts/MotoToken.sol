@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.27;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -106,7 +106,7 @@ contract MotoToken is ERC20, Ownable, ReentrancyGuard {
      * @param to Recipient address
      * @param amount Amount to transfer
      */
-    function _transfer(address from, address to, uint256 amount) internal override nonReentrant {
+    function _transfer(address from, address to, uint256 amount) internal override {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         require(amount > 0, "MotoToken: transfer amount must be greater than zero");

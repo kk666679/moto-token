@@ -1,6 +1,9 @@
 # Launch a Token
 
-# ![Moto Token Logo](https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg) Moto Token ($MOTO)
+<div style="text-align: center;">
+  <img src="https://qgmvsvq5fn67imzt.public.blob.vercel-storage.com/logo-bulat/%24moto.svg" alt="Moto Token Logo" />
+  <h1>Moto Token ($MOTO)</h1>
+</div>
 
 Launching a token on Base can be accomplished through multiple approaches, from no-code platforms to custom smart contract development. This guide helps you choose the right method and provides implementation details for both approaches.
 

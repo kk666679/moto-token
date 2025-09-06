@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.27;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -172,11 +172,11 @@ contract LiquidityLocker is Ownable, ReentrancyGuard {
      */
     function canWithdraw(uint256 lockId) external view returns (bool canWithdraw, uint256 timeRemaining) {
         LockInfo storage lock = locks[lockId];
-        
+
         if (lock.amount == 0 || lock.withdrawn) {
             return (false, 0);
         }
-        
+
         if (block.timestamp >= lock.unlockTime) {
             return (true, 0);
         } else {

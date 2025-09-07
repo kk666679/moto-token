@@ -9,7 +9,9 @@
 **Version:** 1.0.0  
 **Date:** September 2025  
 **Website:** [matmotofix.pro](https://matmotofix.pro)  
-**Blockchain:** Base (Coinbase Layer 2)  
+**Blockchain:** Base (Coinbase Layer 2)
+[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
+  
 
 ---
 
@@ -268,7 +270,8 @@ $MOTO is an experimental cryptocurrency token with no intrinsic value. The value
 <div style="text-align: center;">
   <p><strong>Join the Moto Token Revolution</strong></p>
   <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
-  <p>Twitter: <a href="https://twitter.com/MatMotoFix_Pro">@MatMotoFix_Pro/a></p>
+  <p>Twitter: [![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
+</p>
   <p>Discord: <a href="https://discord.gg/mototoken">discord.gg/MatMotoFix_Pro</a></p>
 </div>
 

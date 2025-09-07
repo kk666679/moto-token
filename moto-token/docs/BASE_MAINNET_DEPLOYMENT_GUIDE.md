@@ -415,4 +415,4 @@ Ensure all private keys are securely backed up:
 
 ---
 
-**© 2024 Moto Token. All rights reserved.**
+**© 2025 MatMotoFix-Pro. All rights reserved.**

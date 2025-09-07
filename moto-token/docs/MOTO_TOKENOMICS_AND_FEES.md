@@ -350,9 +350,9 @@ Moto Token's tokenomics represent a sophisticated approach to DeFi token design,
 <div style="text-align: center;">
   <p><strong>🚀 Experience the Future of DeFi Tokenomics</strong></p>
   <p>$MOTO: Where Economics Meets Innovation</p>
-  <p>Website: <a href="https://mototoken.xyz">mototoken.xyz</a></p>
+  <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
 </div>
 
 ---
 
-**© 2024 Moto Token. All rights reserved.**
+**© 2025 MatMotoFix-Pro. All rights reserved.**

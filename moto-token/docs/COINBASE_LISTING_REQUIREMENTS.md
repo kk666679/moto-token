@@ -5,6 +5,8 @@
   <h1>Moto Token ($MOTO)</h1>
 </div>
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
+
 Coinbase has a rigorous review process for listing new assets on its platform. While the specific details are not fully public, the following are the key areas of focus:
 
 **1. Legal and Compliance:**

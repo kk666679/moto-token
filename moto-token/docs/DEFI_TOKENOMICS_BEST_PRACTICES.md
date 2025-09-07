@@ -5,6 +5,8 @@
   <h1>Moto Token ($MOTO)</h1>
 </div>
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
+
 Tokenomics, the economic model of a cryptocurrency, is crucial for the long-term sustainability and success of any DeFi project. Well-designed tokenomics incentivize desired behaviors, create value, and ensure the health of the ecosystem. Here are some best practices:
 
 **1. Clear Utility and Value Proposition:**

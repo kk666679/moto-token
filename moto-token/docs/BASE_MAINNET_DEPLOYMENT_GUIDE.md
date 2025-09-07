@@ -5,6 +5,7 @@
   <h1>Moto Token ($MOTO)</h1>
 </div>
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
 ---
 
 ## Overview

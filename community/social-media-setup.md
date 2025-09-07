@@ -1,9 +1,9 @@
 # 📱 Social Media Setup
 
-## Twitter (@MotoTokenBase)
+## Twitter [![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
 🏍️ Moto Token ($MOTO) - Self-sustaining growth engine on @base. ETH reflections + buyback & burn.
 
-## Telegram (@MotoTokenOfficial)  
+## Telegram (@*********)  
 Official Moto Token community on Base blockchain.
 
 ## Discord

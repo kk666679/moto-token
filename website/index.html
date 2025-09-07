@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Token - Self-Sustaining Growth Engine</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #0a0a0a; color: #fff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero { text-align: center; padding: 60px 0; }
+        .logo { font-size: 80px; margin-bottom: 20px; }
+        .btn { background: #ff6b35; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 40px 0; }
+        .stat-card { background: #1a1a1a; padding: 20px; border-radius: 8px; text-align: center; }
+        .wallet-section { background: #1a1a1a; padding: 30px; border-radius: 8px; margin: 20px 0; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">🏍️</div>
+            <h1>Moto Token ($MOTO)</h1>
+            <p>The Self-Sustaining Growth Engine on Base</p>
+            <a href="https://baseswap.fi" class="btn" target="_blank">Get MOTO</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>Total Supply</h3>
+                <p>1,000,000,000 MOTO</p>
+            </div>
+            <div class="stat-card">
+                <h3>Fee Structure</h3>
+                <p>5% (2% Buyback + 3% Liquidity)</p>
+            </div>
+            <div class="stat-card">
+                <h3>Network</h3>
+                <p>Base Blockchain</p>
+            </div>
+            <div class="stat-card">
+                <h3>Rewards</h3>
+                <p>ETH Reflections</p>
+            </div>
+        </div>
+
+        <div class="wallet-section">
+            <h2>Connect Wallet</h2>
+            <button id="connectBtn" class="btn">Connect MetaMask</button>
+            
+            <div id="walletInfo" class="hidden">
+                <p>Address: <span id="userAddress"></span></p>
+                <p>MOTO Balance: <span id="motoBalance">0</span></p>
+                <p>Claimable ETH: <span id="claimableRewards">0</span></p>
+                <button id="claimBtn" class="btn">Claim Rewards</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('connectBtn').onclick = async () => {
+            if (!window.ethereum) {
+                alert('Please install MetaMask');
+                return;
+            }
+            
+            try {
+                await window.ethereum.request({ method: 'eth_requestAccounts' });
+                const provider = new ethers.providers.Web3Provider(window.ethereum);
+                const signer = provider.getSigner();
+                const address = await signer.getAddress();
+                
+                document.getElementById('userAddress').textContent = address.slice(0,6) + '...' + address.slice(-4);
+                document.getElementById('connectBtn').classList.add('hidden');
+                document.getElementById('walletInfo').classList.remove('hidden');
+            } catch (error) {
+                console.error('Connection failed:', error);
+            }
+        };
+    </script>
+</body>
+</html>

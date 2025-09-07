@@ -1,5 +1,5 @@
 {
-  "name": "moto-token-project",
+  "name": "@moto/token-project",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
@@ -11,12 +11,16 @@
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat run scripts/deploy.js",
-    "verify": "npx hardhat run scripts/verify.js"
+    "deploy:testnet": "npx hardhat run scripts/testnet-deploy.js --network base-sepolia",
+    "deploy:mainnet": "npx hardhat run scripts/mainnet-deploy.js --network base-mainnet",
+    "verify": "npx hardhat run scripts/verify.js",
+    "audit": "npm audit fix",
+    "update-deps": "npm update"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["defi", "token", "base", "ethereum", "buyback", "reflections"],
+  "author": "Moto Token Team",
+  "license": "MIT",
+  "description": "Moto Token - Self-sustaining growth engine on Base blockchain",
   "devDependencies": {
     "hardhat": "^2.26.3",
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",

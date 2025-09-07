@@ -342,8 +342,8 @@
       ]
     },
     "/workspaces/moto-token/moto-token/contracts/MotoToken.sol": {
-      "lastModificationDate": 1757190560336,
-      "contentHash": "992586a9ca6c84bf3285c19273d72b3f",
+      "lastModificationDate": 1757221271098,
+      "contentHash": "61a5f80d4e6bce192abef98fbdc5c515",
       "sourceName": "contracts/MotoToken.sol",
       "solcConfig": {
         "version": "0.8.27",

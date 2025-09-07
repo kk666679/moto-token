@@ -47,12 +47,12 @@ contract MotoToken is Ownable, ERC20 {
     constructor(address initialOwner) ERC20("Moto", "MOTO") Ownable(initialOwner) {
         require(initialOwner != address(0), "MotoToken: invalid owner address");
 
-        // Mint total supply to the initial owner
-        _mint(msg.sender, 1000 * 10 ** decimals());
-
         // Set fee exemptions for owner and contract
         feeExempt[initialOwner] = true;
         feeExempt[address(this)] = true;
+        
+        // Mint total supply to the initial owner
+        _mint(initialOwner, TOTAL_SUPPLY);
     }
 
     /**
@@ -107,9 +107,11 @@ contract MotoToken is Ownable, ERC20 {
      * @param amount Amount to transfer
      */
     function _update(address from, address to, uint256 amount) internal override {
-        require(from != address(0), "ERC20: transfer from the zero address");
-        require(to != address(0), "ERC20: transfer to the zero address");
-        require(amount > 0, "MotoToken: transfer amount must be greater than zero");
+        // Allow minting (from zero address) and burning (to zero address)
+        if (from != address(0)) {
+            require(to != address(0), "ERC20: transfer to the zero address");
+            require(amount > 0, "MotoToken: transfer amount must be greater than zero");
+        }
         
         // Check if fee should be applied
         bool takeFee = !feeExempt[from] && !feeExempt[to] && 
@@ -130,7 +132,7 @@ contract MotoToken is Ownable, ERC20 {
             super._update(from, to, netAmount);
         } else {
             // No fee, transfer full amount
-            super._transfer(from, to, amount);
+            super._update(from, to, amount);
         }
     }
     

@@ -2,6 +2,11 @@ const { ethers } = require("hardhat");
 const fs = require("fs");
 const path = require("path");
 
+// Input sanitization helper
+function sanitizeInput(input) {
+  return String(input).replace(/[\r\n\t]/g, ' ').substring(0, 100);
+}
+
 async function main() {
   console.log("Starting Moto Token deployment...");
   
@@ -101,7 +106,8 @@ async function main() {
       config: config,
     };
     
-    const deploymentFile = path.join(__dirname, "..", "deployments", `${network.name}-${Date.now()}.json`);
+    const sanitizedNetworkName = network.name.replace(/[^a-zA-Z0-9-]/g, '');
+    const deploymentFile = path.resolve(__dirname, "..", "deployments", `${sanitizedNetworkName}-${Date.now()}.json`);
     fs.mkdirSync(path.dirname(deploymentFile), { recursive: true });
     fs.writeFileSync(deploymentFile, JSON.stringify(deploymentData, null, 2));
     
@@ -115,7 +121,7 @@ async function main() {
     
     // 8. Verification instructions
     console.log("\n📋 Contract verification commands:");
-    console.log(`npx hardhat verify --network ${network.name} ${motoTokenAddress} "${config.initialOwner}"`);
+    console.log(`npx hardhat verify --network ${sanitizeInput(network.name)} ${sanitizeInput(motoTokenAddress)} "${sanitizeInput(config.initialOwner)}"`);
     console.log(`npx hardhat verify --network ${network.name} ${buybackAddress} "${motoTokenAddress}" "${config.baseSwapRouter}" "${config.initialOwner}"`);
     console.log(`npx hardhat verify --network ${network.name} ${vaultAddress} "${motoTokenAddress}" "${config.baseSwapRouter}" "${config.initialOwner}"`);
     console.log(`npx hardhat verify --network ${network.name} ${liquidityLockerAddress} "${config.initialOwner}"`);

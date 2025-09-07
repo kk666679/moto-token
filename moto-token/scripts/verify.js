@@ -2,6 +2,20 @@ const { ethers } = require("hardhat");
 const fs = require("fs");
 const path = require("path");
 
+// Input sanitization helper
+function sanitizeInput(input) {
+  return String(input).replace(/[\r\n\t]/g, ' ').substring(0, 100);
+}
+
+// Safe JSON parsing
+function safeJsonParse(data) {
+  try {
+    return JSON.parse(data);
+  } catch (error) {
+    throw new Error('Invalid JSON format in deployment file');
+  }
+}
+
 async function main() {
   const deploymentFile = process.argv[2];
   
@@ -15,10 +29,10 @@ async function main() {
     process.exit(1);
   }
   
-  const deploymentData = JSON.parse(fs.readFileSync(deploymentFile, "utf8"));
+  const deploymentData = safeJsonParse(fs.readFileSync(deploymentFile, "utf8"));
   const { contracts, config } = deploymentData;
   
-  console.log("Verifying contracts from deployment:", deploymentFile);
+  console.log("Verifying contracts from deployment:", sanitizeInput(deploymentFile));
   
   try {
     // Verify MotoToken

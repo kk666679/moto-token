@@ -325,7 +325,7 @@ Annualized Return = (Fee Earnings × 365) / Initial Investment
 ### Official Channels
 - **Website:** [matmotofix.pro](https://matmotofix.pro)
 - **Discord:** [discord.gg/MatMotoFix-Pro](https://discord.gg/MatMotoFix-Pro)
-- **Twitter:** [@MatMotoFix_Pro](https://twitter.com/MotoToken)
+- **Twitter:** [@MatMotoFix_Pro](https://twitter.com/matmotofix_pro)
 - **GitHub:** [github.com/MatMoto/moto-token](https://github.com/MatMoto/moto-token)
 
 ### Community Resources

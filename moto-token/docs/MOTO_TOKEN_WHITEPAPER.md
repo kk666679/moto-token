@@ -270,7 +270,7 @@ $MOTO is an experimental cryptocurrency token with no intrinsic value. The value
 <div style="text-align: center;">
   <p><strong>Join the Moto Token Revolution</strong></p>
   <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
-  <p>Twitter: <a[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)a></p>
+  <p>Twitter: <a[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)</a></p>
   <p>Discord: <a href="https://discord.gg/mototoken">discord.gg/MatMotoFix_Pro</a></p>
 </div>
 

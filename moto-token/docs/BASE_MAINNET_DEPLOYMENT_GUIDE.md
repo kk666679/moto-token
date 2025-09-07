@@ -409,7 +409,7 @@ Ensure all private keys are securely backed up:
 
 <div style="text-align: center;">
   <p><strong>🚀 Moto Token Successfully Deployed on Base</strong></p>
-  <p>Website: <a href="https://mototoken.xyz">mototoken.xyz</a></p>
+  <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
   <p>BaseScan: <a href="https://basescan.org">basescan.org</a></p>
 </div>
 

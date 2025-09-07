@@ -195,10 +195,10 @@ This document serves as a comprehensive compliance checklist for Moto Token's po
 
 <div style="text-align: center;">
   <p><strong>Moto Token - Built for Coinbase</strong></p>
-  <p>Website: <a href="https://mototoken.xyz">mototoken.xyz</a></p>
-  <p>GitHub: <a href="https://github.com/mototoken">github.com/mototoken</a></p>
+  <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
+  <p>GitHub: <a href="https://github.com/MatMoto/moto-token">github.com/MatMoto/moto-token</a></p>
 </div>
 
 ---
 
-**© 2024 Moto Token. All rights reserved.**
+**© 2025 MatMotoFix-Pro. All rights reserved.**

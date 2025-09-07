@@ -5,6 +5,8 @@
   <h1>Moto Token ($MOTO)</h1>
 </div>
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/MatMotoFix_Pro?style=social)](https://twitter.com/MatMotoFix_Pro)
+
 Launching a token on Base can be accomplished through multiple approaches, from no-code platforms to custom smart contract development. This guide helps you choose the right method and provides implementation details for both approaches.
 
 **For most users:** Use existing token launch platforms like Zora, Clanker, or Flaunch. These tools handle the technical complexity while providing unique features for different use cases.**For developers:** Build custom ERC-20 tokens using Foundry and OpenZeppelin’s battle-tested contracts for maximum control and customization.

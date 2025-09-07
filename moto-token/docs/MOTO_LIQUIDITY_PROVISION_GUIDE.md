@@ -323,10 +323,10 @@ Annualized Return = (Fee Earnings × 365) / Initial Investment
 ## Support and Resources
 
 ### Official Channels
-- **Website:** [mototoken.xyz](https://mototoken.xyz)
-- **Discord:** [discord.gg/mototoken](https://discord.gg/mototoken)
-- **Twitter:** [@MotoToken](https://twitter.com/MotoToken)
-- **GitHub:** [github.com/mototoken](https://github.com/mototoken)
+- **Website:** [matmotofix.pro](https://matmotofix.pro)
+- **Discord:** [discord.gg/MatMotoFix-Pro](https://discord.gg/MatMotoFix-Pro)
+- **Twitter:** [@MatMotoFix_Pro](https://twitter.com/MotoToken)
+- **GitHub:** [github.com/MatMoto/moto-token](https://github.com/MatMoto/moto-token)
 
 ### Community Resources
 - **BaseSwap Documentation:** DEX usage guides
@@ -335,9 +335,9 @@ Annualized Return = (Fee Earnings × 365) / Initial Investment
 - **Support Forums:** Community help
 
 ### Emergency Contacts
-- **Technical Support:** development@mototoken.xyz
+- **Technical Support:** support@matmotofix.pro
 - **Community Support:** Discord moderators
-- **Security Issues:** security@mototoken.xyz
+- **Security Issues:** support@matmotofix.pro
 
 ---
 
@@ -355,11 +355,11 @@ Remember to always do your own research, understand the risks, and never invest 
 ---
 
 <div style="text-align: center;">
-  <p><strong>🚀 Join the Moto Token Liquidity Revolution</strong></p>
+  <p><strong>🚀 Join the MatMotoFix-Pro</strong></p>
   <p>Provide liquidity and earn rewards while supporting the ecosystem!</p>
   <p>BaseSwap: <a href="https://baseswap.org">baseswap.org</a></p>
 </div>
 
 ---
 
-**© 2024 Moto Token. All rights reserved.**
+**© 2025 MatMotoFix-Pro. All rights reserved.**

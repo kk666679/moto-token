@@ -365,9 +365,9 @@ Security auditing is a critical component of Moto Token's responsible developmen
 <div style="text-align: center;">
   <p><strong>🔒 Security First: Protecting the Moto Token Community</strong></p>
   <p>Your security is our top priority</p>
-  <p>Website: <a href="https://mototoken.xyz">mototoken.xyz</a></p>
+  <p>Website: <a href="https://matmotofix.pro">matmotofix.pro</a></p>
 </div>
 
 ---
 
-**© 2024 Moto Token. All rights reserved.**
+**© 2025 MatMotoFix-Pro. All rights reserved.**

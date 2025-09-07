@@ -285,7 +285,7 @@ $MOTO is an experimental cryptocurrency token with no intrinsic value. The value
   <p>
     Discord:
     <a href="https://discord.gg/rtSQCqHD" target="_blank" rel="noopener">
-      <img src="https://img.shields.io/discord/1391997884181905421?label=Join%20Discord&logo=discord&style=social" alt="Join Discord">
+      <img src="https://img.shields.io/discord/1392004532455866413?label=Join%20Discord&logo=discord&style=social" alt="Join Discord">
     </a>
   </p>
 </div>
